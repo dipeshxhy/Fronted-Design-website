@@ -50,6 +50,10 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
+            <div className='flex justify-center gap-5'>
+                <h1 className='uppercase text-gray-400 text-2xl hover:text-gray-500 duration-200 cursor-pointer'>prev</h1>
+                <h1 className='uppercase text-gray-400 text-2xl  hover:text-gray-500 duration-200 cursor-pointer'>next</h1>
+            </div>
         </div>
     </div>
   )
