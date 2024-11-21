@@ -3,7 +3,7 @@ import React from 'react'
 const Hero = () => {
   return (
     <div className=' relative'>
-        <div className="container">
+        <div className="container mt-12 md:mt-0">
             <div className="grid grid-cols-1 md:grid-cols-3 place-items-center min-h-[85vh]">
                 <div className='space-y-10'>
                     <div >
