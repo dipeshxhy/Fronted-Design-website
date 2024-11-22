@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr; /* Single column layout */
+    grid-template-rows: 5% 8% 45% auto; /* Adjust rows for proper layout */
+}
+
+nav {
+    background-color: green;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+.circles {
+    display: flex;
+}
+
+.circle {
+    height: 15px;
+    width: 15px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+#nav-menu {
+    display: flex;
+    gap: 50px;
+}
+
+#nav-menu h4 {
+    font-size: 1.2vw;
+    font-weight: 600;
+}
+
+#nav-menu span {
+    color: rgb(186, 182, 182);
+}
+
+#menu {
+    background-color: rgb(205, 214, 36);
+    display: flex;
+    gap: 40px;
+    padding: 10px 20px;
+}
+
+#menu h5 {
+    font-size: 1.2vw;
+    font-weight: 500;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#scroller-content {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    gap: 20px;
+    padding: 20px;
+}
+
+#scroller-content .content-up {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 60vw;
+}
+
+#scroller-content .content h1 {
+    font-size: 10vw;
+    font-weight: 500;
+    text-wrap: nowrap;
+}
+
+#scroller-content::-webkit-scrollbar {
+    background-color: transparent;
+    height: 6px;
+}
+
+#scroller-content::-webkit-scrollbar-thumb {
+    background-color: orangered;
+}
+
+#image-container {
+    background-color: rgb(225, 68, 188);
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling for images */
+    overflow-y: hidden;
+}
+
+#image-container::-webkit-scrollbar {
+   display: none; /* Scrollbar height for horizontal scrolling */
+}
+
+
+
+.image {
+    flex-shrink: 0; /* Prevent shrinking */
+    width: 100%; /* Adjust as needed */
+    height: 100%;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 27%;
+}
+
+
+@media (max-width:600px) {
+    main {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-rows: 5% 5% 20% auto; /* Adjust rows for proper layout */
+        overflow-y: hidden;
+    }
+    
+    nav {
+        background-color: green;
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+        justify-content: space-between;
+    }
+    
+    .circles {
+        display: flex;
+    }
+    
+    .circle {
+        height: 15px;
+        width: 15px;
+        background-color: black;
+        border-radius: 50%;
+    }
+    
+    #nav-menu {
+        display: flex;
+        gap: 50px;
+    }
+    
+    #nav-menu h4 {
+        font-size: 1.2vw;
+        font-weight: 600;
+        cursor: pointer;
+        display: none;
+     
+    }
+    
+    #nav-menu span {
+        color: rgb(186, 182, 182);
+    }
+    
+    #menu {
+        background-color: rgb(205, 214, 36);
+        display: flex;
+        gap: 40px;
+        padding: 10px 10px;
+    }
+    
+    #menu h5 {
+        font-size: 1.4vw;
+        font-weight: 500;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+    
+    #scroller-content {
+        display: flex;
+        overflow-x: auto; /* Enable horizontal scrolling */
+        flex-wrap: nowrap;
+        overflow-y: hidden;
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    #scroller-content .content-up {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 60vw;
+    }
+    
+    #scroller-content .content h1 {
+        font-size: 10vw;
+        font-weight: 500;
+        text-wrap: nowrap;
+    }
+    
+    #scroller-content::-webkit-scrollbar {
+        background-color: transparent;
+        height: 6px;
+    }
+    
+    #scroller-content::-webkit-scrollbar-thumb {
+        background-color: orangered;
+    }
+    
+    #image-container {
+        background-color: rgb(225, 68, 188);
+        display: flex;
+        overflow-x: auto; /* Enable horizontal scrolling for images */
+        overflow-y: hidden;
+    }
+    
+    #image-container::-webkit-scrollbar {
+       display: none; /* Scrollbar height for horizontal scrolling */
+    }
+    
+    
+    
+    .image {
+        flex-shrink: 0; /* Prevent shrinking */
+        width: 100%; /* Adjust as needed */
+        height: 100%;
+    }
+    
+    .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        }
+
+}
